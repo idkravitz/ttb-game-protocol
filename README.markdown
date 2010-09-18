@@ -39,4 +39,14 @@
     '&lt;message&gt;'
 }</code></pre>
 
+## Очистить ##
+### Запрос ######
+<pre><code>{
+    'cmd': 'clear'
+}</code></pre>
+### Ответ ######
+<pre><code>{
+    'ok'
+}</code></pre>
+
 
