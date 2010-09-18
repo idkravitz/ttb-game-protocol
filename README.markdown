@@ -75,7 +75,7 @@ Protocol Description
     'players': [ { 'username': '&lt;username&gt;' }, ...  ]
 }</code></pre>
 
-## Getting the archive of messages ##
+## Getting an archive of messages ##
 
 ### Request ######
 <pre><code>{
@@ -103,7 +103,7 @@ Protocol Description
     'message': 'ok'
 }</code></pre>
 
-## Creation of the game ##
+## Creation of a game ##
 
 ### Request ######
 <pre><code>{
@@ -116,7 +116,7 @@ Protocol Description
     'message': 'ok'
 }</code></pre>
 
-## Join the game ##
+## Join a game ##
 
 ### Request ######
 <pre><code>{
@@ -129,7 +129,7 @@ Protocol Description
     'message': 'ok'
 }</code></pre>
 
-## Leaving the game ##
+## Leaving a game ##
 
 ### Request ######
 <pre><code>{
