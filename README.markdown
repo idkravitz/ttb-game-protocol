@@ -1,14 +1,14 @@
 Описание протокола
 ==================
-#Pегистрация
+# Pегистрация #
 
-##Запрос
+## Запрос ##
 <pre><code>{
     'cmd': 'register',
     'username': '&lt;username&gt;',
     'password': '&lt;password&gt;'
 }</code></pre>
-##Ответ
+## Ответ ##
 <pre><code>{
     'ok',
     '&lt;number&gt;'
