@@ -30,13 +30,13 @@ Protocol description
 ### Request ######
     {
         "cmd": "register",
-        "username": "&lt;username&gt;",
-        "password": "&lt;password&gt;"
+        "username": "<username>",
+        "password": "<password>"
     }
 ### Answer ######
     {
         "status": "ok",
-        "sid": "&lt;sid&gt;"
+        "sid": "<sid>"
     }
 
 ## Logout ##
@@ -44,7 +44,7 @@ Protocol description
 ### Request ######
     {
         "cmd": "unregister",
-        "sid": "&lt;sid&gt;"
+        "sid": "<sid>"
     }
 ### Answer ######
     {
@@ -55,13 +55,13 @@ Protocol description
 ### Request ######
     {
         "cmd": "chat",
-        "sid": "&lt;sid&gt;",
-        "message": "&lt;text&gt;"
+        "sid": "<sid>",
+        "message": "<text>"
     }
 ### Answer ######
     {
         "status": "ok",
-        "chat message": "&lt;message&gt;"
+        "chat message": "<message>"
     }
 
 ## Database cleanup ##
@@ -79,12 +79,12 @@ Protocol description
 ### Request ######
     {
         "cmd": "getGamesList",
-        "sid": "&lt;sid&gt;"
+        "sid": "<sid>"
     }
 ### Answer ######
     {
         "status": "ok",
-        "games": [ { "username": "&lt;username&gt;" }, ...  ]
+        "games": [ { "username": "<username>" }, ...  ]
     }
 
 ## Getting a list of players ##
@@ -92,12 +92,12 @@ Protocol description
 ### Request ######
     {
         "cmd": "getPlayersList",
-        "sid": "&lt;sid&gt;"
+        "sid": "<sid>"
     }
 ### Answer ######
     {
         "status": "ok",
-        "players": [ { "username": "&lt;username&gt;" }, ...  ]
+        "players": [ { "username": "<username>" }, ...  ]
     }
 
 ## Getting an archive of messages ##
@@ -105,13 +105,13 @@ Protocol description
 ### Request ######
     {
         "cmd": "getChartList",
-        "sid": "&lt;sid&gt;"
+        "sid": "<sid>"
     }
 ### Answer ######
     {
         "status": "ok",
-        "chat":  [ { "username": "&lt;username&gt;",
-                     "message": "&lt;message&gt;",
+        "chat":  [ { "username": "<username>",
+                     "message": "<message>",
                      "time": "UTC" }, ... ]
     }
 
@@ -120,8 +120,8 @@ Protocol description
 ### Request ######
     {
         "cmd": "setPlayerStatus",
-        "sid": "&lt;sid&gt;",
-        "status": "&lt;status&gt;"
+        "sid": "<sid>",
+        "status": "<status>"
     }
 ### Answer ######
     {
@@ -133,8 +133,8 @@ Protocol description
 ### Request ######
     {
         "cmd": "createGame",
-        "sid": "&lt;sid&gt;",
-        "username": "&lt;username&gt;"
+        "sid": "<sid>",
+        "username": "<username>"
     }
 ### Answer ######
     {
@@ -146,8 +146,8 @@ Protocol description
 ### Request ######
     {
         "cmd": "joinGame",
-        "sid": "&lt;sid&gt;",
-        "username": "&lt;username&gt;"
+        "sid": "<sid>",
+        "username": "<username>"
     }
 ### Answer ######
     {
@@ -159,8 +159,8 @@ Protocol description
 ### Request ######
     {
         "cmd": "leaveGame",
-        "sid": "&lt;sid&gt;",
-        "username": "&lt;username&gt;"
+        "sid": "<sid>",
+        "username": "<username>"
     }
 ### Answer ######
     {
