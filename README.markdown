@@ -90,6 +90,19 @@ Protocol Description
                  'time': 'UTC' }, ... ]
 }</code></pre>
 
+## Setting player status ##
+
+### Request ######
+<pre><code>{
+    'cmd': 'setPlayerStatus',
+    'sid': '&lt;sid&gt;',
+    'status': '&lt;status&gt;'
+}</code></pre>
+### Answer ######
+<pre><code>{
+    'message': 'ok'
+}</code></pre>
+
 ## Creation of the game ##
 
 ### Request ######
