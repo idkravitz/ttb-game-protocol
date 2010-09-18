@@ -1,88 +1,88 @@
-Описание протокола
-==================
-## Pегистрация ##
+Protocol Description
+====================
+## Registration ##
 
-### Запрос ######
+### Request ######
 <pre><code>{
     'cmd': 'register',
     'username': '&lt;username&gt;',
     'password': '&lt;password&gt;'
 }</code></pre>
-### Ответ ######
+### Answer ######
 <pre><code>{
     'message': 'ok',
     'sid': '&lt;sid&gt;'
 }</code></pre>
 
-## Разрегистрация ##
+## Logout ##
 
-### Запрос ######
+### Request ######
 <pre><code>{
     'cmd': 'unregister',
     'sid': '&lt;sid&gt;'
 }</code></pre>
-### Ответ ######
+### Answer ######
 <pre><code>{
     'message': 'ok'
 }</code></pre>
 
-## Чат ##
-### Запрос ######
+## Chat ##
+### Request ######
 <pre><code>{
     'cmd': 'chat',
     'sid': '&lt;sid&gt;',
     'message': '&lt;text&gt;'
 }</code></pre>
-### Ответ ######
+### Answer ######
 <pre><code>{
     'message': 'ok',
     'chat message': '&lt;message&gt;'
 }</code></pre>
 
-## Очистка базы данных ##
-### Запрос ######
+## Database cleanup ##
+### Request ######
 <pre><code>{
     'cmd': 'clear'
 }</code></pre>
-### Ответ ######
+### Answer ######
 <pre><code>{
     'message': 'ok'
 }</code></pre>
 
-## Получение списка игр ##
+## Getting a list of games ##
 
-### Запрос ######
+### Request ######
 <pre><code>{
     'cmd': 'getGamesList',
     'sid': '&lt;sid&gt;'
 }</code></pre>
-### Ответ ######
+### Answer ######
 <pre><code>{
     'message': 'ok',
     'games': [ { 'username': '&lt;username&gt;' }, ...  ]
 }</code></pre>
 
-## Получение списка игроков ##
+## Getting a list of players ##
 
-### Запрос ######
+### Request ######
 <pre><code>{
     'cmd': 'getPlayersList',
     'sid': '&lt;sid&gt;'
 }</code></pre>
-### Ответ ######
+### Answer ######
 <pre><code>{
     'message': 'ok',
     'players': [ { 'username': '&lt;username&gt;' }, ...  ]
 }</code></pre>
 
-## Получение архива сообщений ##
+## Getting the archive of messages ##
 
-### Запрос ######
+### Request ######
 <pre><code>{
     'cmd': 'getChartList',
     'sid': '&lt;sid&gt;'
 }</code></pre>
-### Ответ ######
+### Answer ######
 <pre><code>{
     'message': 'ok',
     'chat':  [ { 'username': '&lt;username&gt;',
@@ -90,14 +90,14 @@
                  'time': 'UTC' }, ... ]
 }</code></pre>
 
-## Создание игры ##
+## Creation of the game ##
 
-### Запрос ######
+### Request ######
 <pre><code>{
     'sid': '&lt;sid&gt;',
     'username': '&lt;username&gt;'
 }</code></pre>
-### Ответ ######
+### Answer ######
 <pre><code>{
     'message': 'ok'
 }</code></pre>
