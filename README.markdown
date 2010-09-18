@@ -1,168 +1,174 @@
-Protocol Description
+Protocol description
 ====================
 ## Types of server respond ##
 
 #### OK ####
-<pre><code>{
-    "status": "ok",
-    ...
-}</code></pre>
+    {
+        "status": "ok",
+        ...
+    }
 #### Bad Request ####
-<pre><code>{
-    "status": "badRequest",
-    "message": "description",
-    ...
-}</code></pre>
+    {
+        "status": "badRequest",
+        "message": "description",
+        ...
+    }
 #### Bad Command ####
-<pre><code>{
-    "status": "badCommand",
-    "message": "description",
-    ...
-}</code></pre>
+    {
+        "status": "badCommand",
+        "message": "description",
+        ...
+    }
 #### Internal Error ####
-<pre><code>{
-    "status": "internalError",
-    "message": "description",
-    ...
-}</code></pre>
+    {
+        "status": "internalError",
+        "message": "description",
+        ...
+    }
 ## Registration ##
 
 ### Request ######
-<pre><code>{
-    "cmd": "register",
-    "username": "&lt;username&gt;",
-    "password": "&lt;password&gt;"
-}</code></pre>
+    {
+        "cmd": "register",
+        "username": "&lt;username&gt;",
+        "password": "&lt;password&gt;"
+    }
 ### Answer ######
-<pre><code>{
-    "status": "ok",
-    "sid": "&lt;sid&gt;"
-}</code></pre>
+    {
+        "status": "ok",
+        "sid": "&lt;sid&gt;"
+    }
 
 ## Logout ##
 
 ### Request ######
-<pre><code>{
-    "cmd": "unregister",
-    "sid": "&lt;sid&gt;"
-}</code></pre>
+    {
+        "cmd": "unregister",
+        "sid": "&lt;sid&gt;"
+    }
 ### Answer ######
-<pre><code>{
-    "status": "ok"
-}</code></pre>
+    {
+        "status": "ok"
+    }
 
 ## Chat ##
 ### Request ######
-<pre><code>{
-    "cmd": "chat",
-    "sid": "&lt;sid&gt;",
-    "message": "&lt;text&gt;"
-}</code></pre>
+    {
+        "cmd": "chat",
+        "sid": "&lt;sid&gt;",
+        "message": "&lt;text&gt;"
+    }
 ### Answer ######
-<pre><code>{
-    "status": "ok",
-    "chat message": "&lt;message&gt;"
-}</code></pre>
+    {
+        "status": "ok",
+        "chat message": "&lt;message&gt;"
+    }
 
 ## Database cleanup ##
 ### Request ######
-<pre><code>{
-    "cmd": "clear"
-}</code></pre>
+    {
+        "cmd": "clear"
+    }
 ### Answer ######
-<pre><code>{
-    "status": "ok"
-}</code></pre>
+    {
+        "status": "ok"
+    }
 
 ## Getting a list of games ##
 
 ### Request ######
-<pre><code>{
-    "cmd": "getGamesList",
-    "sid": "&lt;sid&gt;"
-}</code></pre>
+    {
+        "cmd": "getGamesList",
+        "sid": "&lt;sid&gt;"
+    }
 ### Answer ######
-<pre><code>{
-    "status": "ok",
-    "games": [ { "username": "&lt;username&gt;" }, ...  ]
-}</code></pre>
+    {
+        "status": "ok",
+        "games": [ { "username": "&lt;username&gt;" }, ...  ]
+    }
 
 ## Getting a list of players ##
 
 ### Request ######
-<pre><code>{
-    "cmd": "getPlayersList",
-    "sid": "&lt;sid&gt;"
-}</code></pre>
+    {
+        "cmd": "getPlayersList",
+        "sid": "&lt;sid&gt;"
+    }
 ### Answer ######
-<pre><code>{
-    "status": "ok",
-    "players": [ { "username": "&lt;username&gt;" }, ...  ]
-}</code></pre>
+    {
+        "status": "ok",
+        "players": [ { "username": "&lt;username&gt;" }, ...  ]
+    }
 
 ## Getting an archive of messages ##
 
 ### Request ######
-<pre><code>{
-    "cmd": "getChartList",
-    "sid": "&lt;sid&gt;"
-}</code></pre>
+    {
+        "cmd": "getChartList",
+        "sid": "&lt;sid&gt;"
+    }
 ### Answer ######
-<pre><code>{
-    "status": "ok",
-    "chat":  [ { "username": "&lt;username&gt;",
-                 "message": "&lt;message&gt;",
-                 "time": "UTC" }, ... ]
-}</code></pre>
+    {
+        "status": "ok",
+        "chat":  [ { "username": "&lt;username&gt;",
+                     "message": "&lt;message&gt;",
+                     "time": "UTC" }, ... ]
+    }
 
 ## Setting player status ##
 
 ### Request ######
-<pre><code>{
-    "cmd": "setPlayerStatus",
-    "sid": "&lt;sid&gt;",
-    "status": "&lt;status&gt;"
-}</code></pre>
+    {
+        "cmd": "setPlayerStatus",
+        "sid": "&lt;sid&gt;",
+        "status": "&lt;status&gt;"
+    }
 ### Answer ######
-<pre><code>{
-    "status": "ok"
-}</code></pre>
+    {
+        "status": "ok"
+    }
 
 ## Creation of a game ##
 
 ### Request ######
-<pre><code>{
-    "cmd": "createGame",
-    "sid": "&lt;sid&gt;",
-    "username": "&lt;username&gt;"
-}</code></pre>
+    {
+        "cmd": "createGame",
+        "sid": "&lt;sid&gt;",
+        "username": "&lt;username&gt;"
+    }
 ### Answer ######
-<pre><code>{
-    "status": "ok"
-}</code></pre>
+    {
+        "status": "ok"
+    }
 
 ## Join a game ##
 
 ### Request ######
-<pre><code>{
-    "cmd": "joinGame",
-    "sid": "&lt;sid&gt;",
-    "username": "&lt;username&gt;"
-}</code></pre>
+    {
+        "cmd": "joinGame",
+        "sid": "&lt;sid&gt;",
+        "username": "&lt;username&gt;"
+    }
 ### Answer ######
-<pre><code>{
-    "status": "ok"
-}</code></pre>
+    {
+        "status": "ok"
+    }
 
 ## Leaving a game ##
 
 ### Request ######
-<pre><code>{
-    "cmd": "leaveGame",
-    "sid": "&lt;sid&gt;",
-    "username": "&lt;username&gt;"
-}</code></pre>
+    {
+        "cmd": "leaveGame",
+        "sid": "&lt;sid&gt;",
+        "username": "&lt;username&gt;"
+    }
 ### Answer ######
-<pre><code>{
-    "status": "ok"
-}</code></pre>
+    {
+        "status": "ok"
+    }
+
+Tests format specification
+==========================
+Each test is a file with .tst extension. The name of a test
+must contain only Latin letters, symbol "_", and digits. In
+other words it must match following regexp /[a-zA-Z0-9_]+\.tst/ 
