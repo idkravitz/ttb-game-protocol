@@ -116,19 +116,6 @@ Protocol Description
     'message': 'ok'
 }</code></pre>
 
-## Coming into the game ##
-
-### Request ######
-<pre><code>{
-    'cmd': 'comeIntoGame',
-    'sid': '&lt;sid&gt;',
-    'username': '&lt;username&gt;'
-}</code></pre>
-### Answer ######
-<pre><code>{
-    'message': 'ok'
-}</code></pre>
-
 ## Join the game ##
 
 ### Request ######
