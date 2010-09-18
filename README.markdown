@@ -53,7 +53,7 @@
 
 ### Запрос ######
 <pre><code>{
-    'cmd': 'getGameList',
+    'cmd': 'getGamesList',
     'sid': '&lt;sid&gt;'
 }</code></pre>
 ### Ответ ######
@@ -90,3 +90,14 @@
                  'time': 'UTC' }, ... ]
 }</code></pre>
 
+## Создание игры ##
+
+### Запрос ######
+<pre><code>{
+    'sid': '&lt;sid&gt;',
+    'username': '&lt;username&gt;'
+}</code></pre>
+### Ответ ######
+<pre><code>{
+    'message': 'ok'
+}</code></pre>
