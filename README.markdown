@@ -168,7 +168,7 @@ Tests format specification
 ==========================
 Each test is a file with .tst extension. The name of a test
 must contain only Latin letters, symbol "\_", and digits. In
-other words it must match following regexp */[\\w\_]+\\.tst/* 
+other words it must match following regexp */[a-zA-Z0-9\_]+\\.tst/* 
 
 The inner format of test is a set of JSON requests, separated by
 newlines and/or whitespaces. Only double quotes are allowed. The answer
