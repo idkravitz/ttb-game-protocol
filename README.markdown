@@ -62,3 +62,31 @@
     'games' : [ { 'name': ... }, ...  ]
 }</code></pre>
 
+## Получение списка игроков ##
+
+### Запрос ######
+<pre><code>{
+    'cmd': 'getPlayersList',
+    'sid': '&lt;number&gt;'
+}</code></pre>
+### Ответ ######
+<pre><code>{
+    'ok',
+    'players' : [ { 'username': '&lt;username&gt;' }, ...  ]
+}</code></pre>
+
+## Получение архива сообщений ##
+
+### Запрос ######
+<pre><code>{
+    'cmd': 'getChartList',
+    'sid': '&lt;number&gt;'
+}</code></pre>
+### Ответ ######
+<pre><code>{
+    'ok',
+    'chat' : [ { 'username': '&lt;username&gt;',
+                 'message': '&lt;message&gt;',
+                 'time': 'UTC' }, ... ]
+}</code></pre>
+
