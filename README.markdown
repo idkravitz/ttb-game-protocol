@@ -39,7 +39,7 @@
     '&lt;message&gt;'
 }</code></pre>
 
-## Очистить ##
+## Очистка базы данных ##
 ### Запрос ######
 <pre><code>{
     'cmd': 'clear'
@@ -49,4 +49,16 @@
     'ok'
 }</code></pre>
 
+## Получение списка игр ##
+
+### Запрос ######
+<pre><code>{
+    'cmd': 'getGameList',
+    'sid': '&lt;number&gt;'
+}</code></pre>
+### Ответ ######
+<pre><code>{
+    'ok',
+    'games' : [ { 'name': ... }, ...  ]
+}</code></pre>
 
