@@ -10,16 +10,19 @@ Protocol Description
 #### Bad Request ####
 <pre><code>{
     "status": "badRequest",
+    "message": "description",
     ...
 }</code></pre>
 #### Bad Command ####
 <pre><code>{
     "status": "badCommand",
+    "message": "description",
     ...
 }</code></pre>
 #### Internal Error ####
 <pre><code>{
     "status": "internalError",
+    "message": "description",
     ...
 }</code></pre>
 ## Registration ##
@@ -32,7 +35,7 @@ Protocol Description
 }</code></pre>
 ### Answer ######
 <pre><code>{
-    "message": "ok",
+    "status": "ok",
     "sid": "&lt;sid&gt;"
 }</code></pre>
 
@@ -45,7 +48,7 @@ Protocol Description
 }</code></pre>
 ### Answer ######
 <pre><code>{
-    "message": "ok"
+    "status": "ok"
 }</code></pre>
 
 ## Chat ##
@@ -57,7 +60,7 @@ Protocol Description
 }</code></pre>
 ### Answer ######
 <pre><code>{
-    "message": "ok",
+    "status": "ok",
     "chat message": "&lt;message&gt;"
 }</code></pre>
 
@@ -68,7 +71,7 @@ Protocol Description
 }</code></pre>
 ### Answer ######
 <pre><code>{
-    "message": "ok"
+    "status": "ok"
 }</code></pre>
 
 ## Getting a list of games ##
@@ -80,7 +83,7 @@ Protocol Description
 }</code></pre>
 ### Answer ######
 <pre><code>{
-    "message": "ok",
+    "status": "ok",
     "games": [ { "username": "&lt;username&gt;" }, ...  ]
 }</code></pre>
 
@@ -93,7 +96,7 @@ Protocol Description
 }</code></pre>
 ### Answer ######
 <pre><code>{
-    "message": "ok",
+    "status": "ok",
     "players": [ { "username": "&lt;username&gt;" }, ...  ]
 }</code></pre>
 
@@ -106,7 +109,7 @@ Protocol Description
 }</code></pre>
 ### Answer ######
 <pre><code>{
-    "message": "ok",
+    "status": "ok",
     "chat":  [ { "username": "&lt;username&gt;",
                  "message": "&lt;message&gt;",
                  "time": "UTC" }, ... ]
@@ -122,7 +125,7 @@ Protocol Description
 }</code></pre>
 ### Answer ######
 <pre><code>{
-    "message": "ok"
+    "status": "ok"
 }</code></pre>
 
 ## Creation of a game ##
@@ -135,7 +138,7 @@ Protocol Description
 }</code></pre>
 ### Answer ######
 <pre><code>{
-    "message": "ok"
+    "status": "ok"
 }</code></pre>
 
 ## Join a game ##
@@ -148,7 +151,7 @@ Protocol Description
 }</code></pre>
 ### Answer ######
 <pre><code>{
-    "message": "ok"
+    "status": "ok"
 }</code></pre>
 
 ## Leaving a game ##
@@ -161,5 +164,5 @@ Protocol Description
 }</code></pre>
 ### Answer ######
 <pre><code>{
-    "message": "ok"
+    "status": "ok"
 }</code></pre>
