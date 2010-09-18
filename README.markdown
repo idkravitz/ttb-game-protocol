@@ -10,8 +10,8 @@
 }</code></pre>
 ### Ответ ######
 <pre><code>{
-    'ok',
-    '&lt;number&gt;'
+    'message': 'ok',
+    'sid': '&lt;number&gt;'
 }</code></pre>
 
 ## Разрегистрация ##
@@ -23,7 +23,7 @@
 }</code></pre>
 ### Ответ ######
 <pre><code>{
-    'ok'
+    'message': 'ok'
 }</code></pre>
 
 ## Чат ##
@@ -35,8 +35,8 @@
 }</code></pre>
 ### Ответ ######
 <pre><code>{
-    'ok',
-    '&lt;message&gt;'
+    'message': 'ok',
+    'chat message': '&lt;message&gt;'
 }</code></pre>
 
 ## Очистка базы данных ##
@@ -46,7 +46,7 @@
 }</code></pre>
 ### Ответ ######
 <pre><code>{
-    'ok'
+    'message': 'ok'
 }</code></pre>
 
 ## Получение списка игр ##
@@ -58,8 +58,8 @@
 }</code></pre>
 ### Ответ ######
 <pre><code>{
-    'ok',
-    'games' : [ { 'name': ... }, ...  ]
+    'message': 'ok',
+    'games': 'games' : [ { 'name': ... }, ...  ]
 }</code></pre>
 
 ## Получение списка игроков ##
@@ -71,8 +71,8 @@
 }</code></pre>
 ### Ответ ######
 <pre><code>{
-    'ok',
-    'players' : [ { 'username': '&lt;username&gt;' }, ...  ]
+    'message': 'ok',
+    'players': 'players' : [ { 'username': '&lt;username&gt;' }, ...  ]
 }</code></pre>
 
 ## Получение архива сообщений ##
@@ -84,8 +84,8 @@
 }</code></pre>
 ### Ответ ######
 <pre><code>{
-    'ok',
-    'chat' : [ { 'username': '&lt;username&gt;',
+    'message': 'ok',
+    'chat': 'chat' : [ { 'username': '&lt;username&gt;',
                  'message': '&lt;message&gt;',
                  'time': 'UTC' }, ... ]
 }</code></pre>
