@@ -3,21 +3,13 @@
 #Pегистрация
 
 ##Запрос
-
-<pre><code>
-{
+<pre><code>{
     'cmd': 'register',
-    'username': 'имя_пользователя',
-    'password': 'пароль'
-}
-</code></pre>
-
+    'username': '&lt;username&gt;',
+    'password': '&lt;password&gt;'
+}</code></pre>
 ##Ответ
-
-<pre><code>
-{
+<pre><code>{
     'ok',
-    random number
-}
-</code></pre>
-
+    '&lt;number&gt;'
+}</code></pre>
