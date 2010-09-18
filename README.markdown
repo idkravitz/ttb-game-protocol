@@ -170,5 +170,5 @@ Protocol description
 Tests format specification
 ==========================
 Each test is a file with .tst extension. The name of a test
-must contain only Latin letters, symbol "_", and digits. In
-other words it must match following regexp /[a-zA-Z0-9_]+\.tst/ 
+must contain only Latin letters, symbol "\_", and digits. In
+other words it must match following regexp /[a-zA-Z0-9\_]+\\.tst/ 
