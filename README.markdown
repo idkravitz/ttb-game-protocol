@@ -94,6 +94,46 @@ Protocol Description
 
 ### Request ######
 <pre><code>{
+    'cmd': 'createGame',
+    'sid': '&lt;sid&gt;',
+    'username': '&lt;username&gt;'
+}</code></pre>
+### Answer ######
+<pre><code>{
+    'message': 'ok'
+}</code></pre>
+
+## Coming into the game ##
+
+### Request ######
+<pre><code>{
+    'cmd': 'comeIntoGame',
+    'sid': '&lt;sid&gt;',
+    'username': '&lt;username&gt;'
+}</code></pre>
+### Answer ######
+<pre><code>{
+    'message': 'ok'
+}</code></pre>
+
+## Join the game ##
+
+### Request ######
+<pre><code>{
+    'cmd': 'joinGame',
+    'sid': '&lt;sid&gt;',
+    'username': '&lt;username&gt;'
+}</code></pre>
+### Answer ######
+<pre><code>{
+    'message': 'ok'
+}</code></pre>
+
+## Leaving the game ##
+
+### Request ######
+<pre><code>{
+    'cmd': 'leaveGame',
     'sid': '&lt;sid&gt;',
     'username': '&lt;username&gt;'
 }</code></pre>
