@@ -103,7 +103,7 @@ Protocol description
     {
         "cmd": "getPlayersListForGame",
         "sid": "<sid>"
-        "game number": "<number>"
+        "gameNumber": "<number>"
     }
 ### Answer ######
     {
