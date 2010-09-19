@@ -103,7 +103,7 @@ Protocol description
     {
         "cmd": "getPlayersListForGame",
         "sid": "<sid>"
-        "gameNumber": "<number>"
+        "gameId": "<number>"
     }
 ### Answer ######
     {
@@ -150,7 +150,7 @@ Protocol description
 ### Answer ######
     {
         "status": "ok",
-        "game number": "<number>"
+        "gameId": "<number>"
     }
 
 ## Join a game ##
@@ -160,7 +160,7 @@ Protocol description
         "cmd": "joinGame",
         "sid": "<sid>",
         "username": "<username>",
-        "game number": "<number>"
+        "gameId": "<number>"
     }
 ### Answer ######
     {
