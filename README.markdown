@@ -131,7 +131,7 @@ Protocol description
     {
         "cmd": "createGame",
         "sid": "<sid>",
-        "username": "<username>"
+        "gameName": "<name of game>"
     }
 ### Answer ######
     {
@@ -144,7 +144,7 @@ Protocol description
     {
         "cmd": "joinGame",
         "sid": "<sid>",
-        "username": "<username>"
+        "gameName": "<name of game>"
     }
 ### Answer ######
     {
@@ -157,7 +157,7 @@ Protocol description
     {
         "cmd": "leaveGame",
         "sid": "<sid>",
-        "username": "<username>"
+        "gameName": "<name of game>"
     }
 ### Answer ######
     {
