@@ -97,6 +97,20 @@ Protocol description
         "players": [ { "username": "<username>" }, ...  ]
     }
 
+## Getting a list of players for the game##
+
+### Request ######
+    {
+        "cmd": "getPlayersListForGame",
+        "sid": "<sid>"
+        "game number": "<number>"
+    }
+### Answer ######
+    {
+        "status": "ok",
+        "players": [ { "username": "<username>" }, ...  ]
+    }
+
 ## Getting an archive of messages ##
 
 ### Request ######
