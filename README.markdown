@@ -1,6 +1,6 @@
 Protocol description
 ====================
-## Types of server respond ##
+## Types of server response ##
 
 #### OK ####
     {
@@ -53,7 +53,7 @@ Protocol description
     {
         "cmd": "chat",
         "sid": "<sid>",
-        "message": "<text>"
+        "message": "<message>"
     }
 ### Answer ######
     {
@@ -109,7 +109,7 @@ Protocol description
         "status": "ok",
         "chat":  [ { "username": "<username>",
                      "message": "<message>",
-                     "time": "UTC" }, ... ]
+                     "time": "<UTC>" }, ... ]
     }
 
 ## Setting player status ##
