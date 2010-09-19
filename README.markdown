@@ -149,7 +149,8 @@ Protocol description
     }
 ### Answer ######
     {
-        "status": "ok"
+        "status": "ok",
+        "game number": "<number>"
     }
 
 ## Join a game ##
@@ -158,7 +159,8 @@ Protocol description
     {
         "cmd": "joinGame",
         "sid": "<sid>",
-        "username": "<username>"
+        "username": "<username>",
+        "game number": "<number>"
     }
 ### Answer ######
     {
