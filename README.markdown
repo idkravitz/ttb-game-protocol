@@ -187,7 +187,7 @@ other words, it must match following regexp */[a-zA-Z0-9\_]+\\.tst/*
 The format of test is a set of JSON requests, separated by
 newlines and/or white spaces. Only double quotes are allowed. An answer
 to a test must have exactly the same name, but with .ans extension.
-The inner format of an answer is absolutely the same as the format of a test.
+The format of an answer is absolutely the same as the format of a test.
 
 Consider the following example:
 
