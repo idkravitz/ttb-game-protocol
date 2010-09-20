@@ -46,6 +46,19 @@ Protocol description
         "sid": "<sid>"
     }
 
+## Change password ##
+
+### Request ######
+    {
+        "cmd": "changePassword",
+        "sid": "<sid>",
+        "newPassword": "<password>"
+    }
+### Answer ######
+    {
+        "status": "ok"
+    }
+
 ## Logout ##
 
 ### Request ######
