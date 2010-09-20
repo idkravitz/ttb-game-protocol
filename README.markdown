@@ -37,6 +37,11 @@ Protocol description
         "status": "alreadyInGame",
         "message": "<description>",
     }
+#### Not in Game ####
+    {
+        "status": "notInGame",
+        "message": "<description>",
+    }
 ## Registration ##
 
 ### Request ######
