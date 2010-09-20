@@ -22,6 +22,16 @@ Protocol description
         "status": "internalError",
         "message": "<description>",
     }
+#### Bad Password ####
+    {
+        "status": "badPassword",
+        "message": "<description>",
+    }
+#### Bad Sid ####
+    {
+        "status": "badSid",
+        "message": "<description>",
+    }
 ## Registration ##
 
 ### Request ######
