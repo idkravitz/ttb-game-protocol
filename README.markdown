@@ -58,7 +58,20 @@ Protocol description
 ### Answer ######
     {
         "status": "ok",
-        "chat message": "<message>"
+    }
+
+## Getting chat history ##
+### Request ######
+    {
+        "cmd": "getChatHistory",
+        "sid": "<sid>"
+    }
+### Answer ######
+    {
+        "status": "ok",
+        "chat":  [ { "username": "<username>",
+                     "message": "<message>",
+                     "time": "<UTC>" }, ... ]
     }
 
 ## Database cleanup ##
@@ -109,21 +122,6 @@ Protocol description
     {
         "status": "ok",
         "players": [ { "username": "<username>" }, ...  ]
-    }
-
-## Getting an archive of messages ##
-
-### Request ######
-    {
-        "cmd": "getChartList",
-        "sid": "<sid>"
-    }
-### Answer ######
-    {
-        "status": "ok",
-        "chat":  [ { "username": "<username>",
-                     "message": "<message>",
-                     "time": "<UTC>" }, ... ]
     }
 
 ## Setting player status ##
