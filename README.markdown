@@ -32,6 +32,11 @@ Protocol description
         "status": "badSid",
         "message": "<description>",
     }
+#### Already in Game ####
+    {
+        "status": "alreadyInGame",
+        "message": "<description>",
+    }
 ## Registration ##
 
 ### Request ######
