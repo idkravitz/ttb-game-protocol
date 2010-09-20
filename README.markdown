@@ -117,7 +117,7 @@ Protocol description
 ### Answer ######
     {
         "status": "ok",
-        "games": [ { "username": "<username>" }, ...  ]
+        "games": [ {"gameName": "<name of the game>" }, ...  ]
     }
 
 ## Getting a list of players ##
@@ -139,7 +139,7 @@ Protocol description
     {
         "cmd": "getPlayersListForGame",
         "sid": "<sid>",
-        "gameName": "<name of game>"
+        "gameName": "<name of the game>"
     }
 ### Answer ######
     {
@@ -166,7 +166,7 @@ Protocol description
     {
         "cmd": "createGame",
         "sid": "<sid>",
-        "gameName": "<name of game>"
+        "gameName": "<name of the game>"
     }
 ### Answer ######
     {
@@ -179,7 +179,7 @@ Protocol description
     {
         "cmd": "joinGame",
         "sid": "<sid>",
-        "gameName": "<name of game>"
+        "gameName": "<name of the game>"
     }
 ### Answer ######
     {
@@ -192,7 +192,7 @@ Protocol description
     {
         "cmd": "leaveGame",
         "sid": "<sid>",
-        "gameName": "<name of game>"
+        "gameName": "<name of the game>"
     }
 ### Answer ######
     {
