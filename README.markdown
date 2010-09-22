@@ -1,13 +1,21 @@
 Protocol description
 ====================
 ## Types of server response ##
+This section describes the responses of server. In general each
+response have a status, which resides in _"status"_ field. Only response
+with status "ok" means that last query have been processed clearly, any
+status, that differs from this, stands for error and his "message" field
+describes exactly what bad thing have happened.
 
 #### OK ####
+Every successful query will be followed by this response, it have a status field
+with value "ok" and all necessary data after it.
     {
         "status": "ok",
         ...
     }
 #### Bad Request ####
+This is an error response, and have a meaning of syntax error in JSON query parsing.
     {
         "status": "badRequest",
         "message": "<description>",
