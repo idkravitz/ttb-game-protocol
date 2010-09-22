@@ -176,7 +176,8 @@ This is an error response, and have a meaning of syntax error in JSON query pars
     {
         "cmd": "createGame",
         "sid": "<sid>",
-        "gameName": "<name of the game>"
+        "gameName": "<name of the game>",
+        "maxPlayers": "<number>"
     }
 ### Answer ######
     {
