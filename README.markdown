@@ -21,36 +21,45 @@ This is an error response, and have a meaning of syntax error in JSON query pars
         "message": "<description>",
     }
 #### Bad Command ####
+This error appears when command is incorrect, unknown, don't have enough fields for command or
+have extra fields, that don't required by command. Also may be used for error reporting when other
+error statuses can't be used.
     {
         "status": "badCommand",
         "message": "<description>",
     }
 #### Internal Error ####
+This error returned if something unhandled happened inside your engine. 
     {
         "status": "internalError",
         "message": "<description>",
     }
 #### Bad Password ####
+Used when a bad password supplied to a register command, when username already exists.
     {
         "status": "badPassword",
         "message": "<description>",
     }
 #### Bad Sid ####
+Thats it, invalid sid supplied to any command, that requires a sid.
     {
         "status": "badSid",
         "message": "<description>",
     }
 #### Already Exists ####
+Stands for an error, when a name of game already reserved.
     {
         "status": "alreadyExists",
         "message": "<description>"
     }
 #### Already in Game ####
+This is an error, when some command supplied, that couldn't be executed, when user have status "in game".
     {
         "status": "alreadyInGame",
         "message": "<description>",
     }
 #### Not in Game ####
+Same as above, but with user status "not in game"
     {
         "status": "notInGame",
         "message": "<description>",
