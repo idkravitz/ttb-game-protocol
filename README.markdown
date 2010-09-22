@@ -32,6 +32,11 @@ Protocol description
         "status": "badSid",
         "message": "<description>",
     }
+#### Already Exists ####
+    {
+        "status": "alreadyExists",
+        "message": "<description>"
+    }
 #### Already in Game ####
     {
         "status": "alreadyInGame",
