@@ -108,6 +108,7 @@ Same as above, but with user status "not in game"
     {
         "cmd": "getChatHistory",
         "sid": "<sid>"
+        "gameName": "<name of the game>"
     }
 ### Answer ######
     {
