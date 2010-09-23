@@ -90,11 +90,12 @@ Same as above, but with user status "not in game"
         "status": "ok"
     }
 
-## Chat ##
+## Sending message ##
 ### Request ######
     {
-        "cmd": "chat",
+        "cmd": "sendMessage",
         "sid": "<sid>",
+        "gameName": "<name of the game>"
         "message": "<message>"
     }
 ### Answer ######
