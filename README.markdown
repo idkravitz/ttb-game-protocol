@@ -107,7 +107,7 @@ Same as above, but with user status "not in game"
 ### Request ######
     {
         "cmd": "getChatHistory",
-        "sid": "<sid>"
+        "sid": "<sid>",
         "gameName": "<name of the game>"
     }
 ### Answer ######
@@ -188,7 +188,7 @@ Same as above, but with user status "not in game"
         "cmd": "createGame",
         "sid": "<sid>",
         "gameName": "<name of the game>",
-        "maxPlayers": "<number>"
+        "maxPlayers": <number>
     }
 ### Answer ######
     {
