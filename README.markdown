@@ -221,19 +221,6 @@ Same as above, but with user status "not in game"
         "status": "ok"
     }
 
-## Starting a game ##
-
-### Request ###
-    {
-        "cmd": "startGame",
-        "sid": "<sid>",
-        "gameName": "<name of the game>"
-    }
-### Answer ######
-    {
-        "status": "ok"
-    }
-
 Tests format specification
 ==========================
 Each test is a file with .tst extension. The name of a test
