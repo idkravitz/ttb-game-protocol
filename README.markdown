@@ -158,7 +158,8 @@ Good:
                 "mapName": "<name of map>",
                 "factionName": "<name of faction>",
                 "gameStatus": "<status of game>",
-                "playersCount": <number>
+                "playersCount": <number>,
+                "connectedPlayersCount": <number>
             }, ...  ]
     }
 
