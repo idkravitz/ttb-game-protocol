@@ -301,6 +301,7 @@ Extensions to protocol
     }
 #### Answer ####
 Good: _OK_
+
 ### Delete a map ###
 #### Request ####
     {
@@ -311,5 +312,23 @@ Good: _OK_
 #### Answer ####
 Good: _OK_
 
-
+### Upload Faction ###
+#### Request ####
+{
+    "cmd": "uploadFaction",
+    "name": "<name of faction",
+    "units": [ 
+        {
+            "name": "<name of unit>",
+            "hp": <number>,
+            "mp": <number>,
+            "defense": <number>,
+            "attack": <number>,
+            "range": <number>,
+            "damage": <number>,
+            "cost": <number>
+        }, ... ]
+}
+#### Answer ####
+Good: _OK_
 
