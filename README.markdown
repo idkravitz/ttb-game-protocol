@@ -367,3 +367,13 @@ Good: _OK_
     }
 #### Answer ####
 Good: _OK_
+
+### Choose army ###
+#### Request ####
+    {
+        "cmd": "chooseArmy",
+        "sid": "<sid>",
+        "name": "<name of Army>"
+    }
+#### Answer ####
+Good: _OK_
