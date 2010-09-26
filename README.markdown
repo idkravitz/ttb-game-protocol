@@ -357,3 +357,13 @@ Good: _OK_
     }
 #### Answer ####
 Good: _OK_
+
+### Delete Army ###
+#### Request ####
+    {
+        "cmd": "deleteArmy",
+        "sid": "<sid>",
+        "name": "<name of army>"
+    }
+#### Answer ####
+Good: _OK_
