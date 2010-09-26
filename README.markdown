@@ -333,3 +333,12 @@ Good: _OK_
 #### Answer ####
 Good: _OK_
 
+### Delete Faction ###
+#### Request ####
+    {
+        "cmd": "deleteFaction",
+        "sid": "<sid>",
+        "name": "<name of faction>"
+    }
+#### Answer ####
+Good: _OK_
