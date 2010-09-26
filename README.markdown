@@ -215,8 +215,8 @@ Good: _OK_
         "sid": "<sid>",
         "gameName": "<name of the game>",
         "maxPlayers": <number>,
-        "mapName": "name of map",
-        "factionName": "name of faction",
+        "mapName": "<name of map>",
+        "factionName": "<name of faction>",
         "totalCost": <number>
     }
 ### Answer ######
