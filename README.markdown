@@ -377,3 +377,17 @@ Good: _OK_
     }
 #### Answer ####
 Good: _OK_
+
+### Get Map ###
+#### Request ####
+    {
+        "cmd": "getMap",
+        "sid": "<sid>,
+        "name": "<name of map>"
+    }
+#### Answer ####
+Good:
+    {
+        "status": "ok",
+        "map": ["<map strings>",...]
+    }
