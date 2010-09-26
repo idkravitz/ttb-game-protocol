@@ -152,7 +152,14 @@ Errors: None
 Good:
     {
         "status": "ok",
-        "games": [ {"gameName": "<name of the game>" }, ...  ]
+        "games": [
+            {
+                "gameName": "<name of the game>",
+                "mapName": "<name of map>",
+                "factionName": "<name of faction>",
+                "gameStatus": "<status of game>",
+                "playersCount": <number>
+            }, ...  ]
     }
 
 Errors: _Bad Sid_
@@ -206,7 +213,10 @@ Good: _OK_
         "cmd": "createGame",
         "sid": "<sid>",
         "gameName": "<name of the game>",
-        "maxPlayers": <number>
+        "maxPlayers": <number>,
+        "mapName": "name of map",
+        "factionName": "name of faction",
+        "totalCost": <number>
     }
 ### Answer ######
 Good: _OK_
@@ -297,7 +307,7 @@ Extensions to protocol
         "cmd": "uploadMap",
         "sid": "<sid>",
         "name": "<name>",
-        "map": "[<map strings>,...]"
+        "map": "[<map strings>,...]",
     }
 #### Answer ####
 Good: _OK_
@@ -389,7 +399,7 @@ Good: _OK_
 Good:
     {
         "status": "ok",
-        "map": ["<map strings>",...]
+        "map": ["<map strings>",...],
     }
 
 ### Get Faction ###
