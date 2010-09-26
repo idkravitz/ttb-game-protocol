@@ -30,7 +30,7 @@ error statuses can't be used.
         "message": "<description>",
     }
 #### Internal Error ####
-This error returned if something unhandled happened inside your engine. 
+This error returned if something unhandled happened inside your engine.
     {
         "status": "internalError",
         "message": "<description>",
@@ -164,7 +164,7 @@ Errors: _Bad Sid_
         "sid": "<sid>"
     }
 ### Answer ######
-Good:    
+Good:
     {
         "status": "ok",
         "players": [ { "username": "<username>" }, ...  ]
@@ -180,7 +180,7 @@ Errors: _Bad Sid_
         "gameName": "<name of the game>"
     }
 ### Answer ######
-Good:    
+Good:
     {
         "status": "ok",
         "players": [ { "username": "<username>" }, ...  ]
@@ -237,7 +237,7 @@ Tests format specification
 ==========================
 Each test is a file with .tst extension. The name of a test
 must contain only Latin letters, symbol "\_", and digits. In
-other words, it must match following regexp */[a-zA-Z0-9\_]+\\.tst/* 
+other words, it must match following regexp */[a-zA-Z0-9\_]+\\.tst/*
 
 The format of test is a set of JSON requests, separated by
 newlines and/or white spaces. Only double quotes are allowed. An answer
@@ -254,7 +254,7 @@ _goodUsername_\__1.tst_
     }
 _goodUsername_\__1.ans_
     {
-        "sid": "Vasya_Pupkin123456", 
+        "sid": "Vasya_Pupkin123456",
         "status": "ok"
     }
 
@@ -277,7 +277,7 @@ like this
                 "111......"]
         ...
     }
-Before the game starts players must put their Units on a deployment spots. Each Unit have a cost, and sum of 
+Before the game starts players must put their Units on a deployment spots. Each Unit have a cost, and sum of
 all Units costs must be equal of lower then totalCost declared for map. Each Unit have a list of characteristics:
 
  * HP - health
@@ -314,21 +314,22 @@ Good: _OK_
 
 ### Upload Faction ###
 #### Request ####
-{
-    "cmd": "uploadFaction",
-    "name": "<name of faction",
-    "units": [ 
-        {
-            "name": "<name of unit>",
-            "hp": <number>,
-            "mp": <number>,
-            "defense": <number>,
-            "attack": <number>,
-            "range": <number>,
-            "damage": <number>,
-            "cost": <number>
-        }, ... ]
-}
+    {
+        "cmd": "uploadFaction",
+        "sid": "<sid>",
+        "name": "<name of faction",
+        "units": [
+            {
+                "name": "<name of unit>",
+                "hp": <number>,
+                "mp": <number>,
+                "defense": <number>,
+                "attack": <number>,
+                "range": <number>,
+                "damage": <number>,
+                "cost": <number>
+            }, ... ]
+    }
 #### Answer ####
 Good: _OK_
 
