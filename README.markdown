@@ -296,8 +296,8 @@ Extensions to protocol
     {
         "cmd": "uploadMap",
         "sid": "<sid>",
-        "map": "[<map strings>]",
-        "name": "<name>"
+        "name": "<name>",
+        "map": "[<map strings>,...]"
     }
 #### Answer ####
 Good: _OK_
