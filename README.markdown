@@ -416,3 +416,22 @@ Good:
             }, ...
         ]
     }
+
+### Get Army ###
+#### Request ####
+    {
+        "cmd": "getArmy",
+        "sid": "<sid>",
+        "name": "<name of army>"
+    }
+#### Answer ####
+Good:
+    {
+        "status": "ok",
+        "units": [
+            {
+                "name": "<name of unit>",
+                "count": <number>
+            },...
+        ]
+    }
