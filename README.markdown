@@ -1,6 +1,7 @@
 Protocol description
 ====================
-## Types of server response ##
+Types of server response
+------------------------
 This section describes the responses of server. In general each
 response have a status, which resides in _"status"_ field. Only response
 with status "ok" means that last query have been processed clearly, any
@@ -64,6 +65,14 @@ Same as above, but with user status "not in game"
         "status": "notInGame",
         "message": "<description>",
     }
+
+Basic commands
+--------------
+This section contains a list of commands, with short descriptions ( I hope it'll happen soon).
+
+Note: The commands with a star(\*) in a beginning of name should work only in test mode, and
+return _Bad Command_ in a normal mode.
+
 ## Registration ##
 
 ### Request ######
@@ -89,6 +98,7 @@ Errors: _Bad Password_, _Bad Username_
     }
 ### Answer ######
 Good: _OK_
+
 Errors: _Bad Sid_
 
 ## Sending message ##
@@ -101,6 +111,8 @@ Errors: _Bad Sid_
     }
 ### Answer ######
 Good: _OK_
+
+Errors: _Bad Game_, _Bad Message_, _Bad Sid_
 
 ## Getting chat history ##
 ### Request ######
@@ -118,7 +130,9 @@ Good:
                      "time": "<UTC>" }, ... ]
     }
 
-## Database cleanup ##
+Errors: _Bad Sid_, _Bad Game_
+
+## \*Database cleanup ##
 ### Request ######
     {
         "cmd": "clear"
@@ -126,6 +140,7 @@ Good:
 ### Answer ######
 Good: _OK_
 
+Errors: None
 ## Getting a list of games ##
 
 ### Request ######
@@ -140,6 +155,7 @@ Good:
         "games": [ {"gameName": "<name of the game>" }, ...  ]
     }
 
+Errors: _Bad Sid_
 ## Getting a list of players ##
 
 ### Request ######
@@ -154,6 +170,7 @@ Good:
         "players": [ { "username": "<username>" }, ...  ]
     }
 
+Errors: _Bad Sid_
 ## Getting a list of players for the game##
 
 ### Request ######
@@ -168,6 +185,8 @@ Good:
         "status": "ok",
         "players": [ { "username": "<username>" }, ...  ]
     }
+
+Errors: _Bad Sid_, _Bad Game_
 
 ## Setting player status ##
 
