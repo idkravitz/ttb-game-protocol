@@ -391,3 +391,28 @@ Good:
         "status": "ok",
         "map": ["<map strings>",...]
     }
+
+### Get Faction ###
+#### Request ####
+    {
+        "cmd": "getFaction",
+        "sid": "<sid>",
+        "name": "<name of faction>"
+    }
+#### Answer ####
+Good:
+    {
+        "status": "ok",
+        "units": [
+            {
+                "name": "<name of unit>",
+                "hp": <number>,
+                "mp": <number>,
+                "defense": <number>,
+                "attack": <number>,
+                "range": <number>,
+                "damage": <number>,
+                "cost": <number>
+            }, ...
+        ]
+    }
