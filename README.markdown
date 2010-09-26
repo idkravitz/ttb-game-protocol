@@ -73,10 +73,12 @@ Same as above, but with user status "not in game"
         "password": "<password>"
     }
 ### Answer ######
+Good:
     {
         "status": "ok",
         "sid": "<sid>"
     }
+Errors: _Bad Password_, _Bad Username_
 
 ## Logout ##
 
@@ -86,9 +88,8 @@ Same as above, but with user status "not in game"
         "sid": "<sid>"
     }
 ### Answer ######
-    {
-        "status": "ok"
-    }
+Good: _OK_
+Errors: _Bad Sid_
 
 ## Sending message ##
 ### Request ######
@@ -99,9 +100,7 @@ Same as above, but with user status "not in game"
         "message": "<message>"
     }
 ### Answer ######
-    {
-        "status": "ok",
-    }
+Good: _OK_
 
 ## Getting chat history ##
 ### Request ######
@@ -111,6 +110,7 @@ Same as above, but with user status "not in game"
         "gameName": "<name of the game>"
     }
 ### Answer ######
+Good:
     {
         "status": "ok",
         "chat":  [ { "username": "<username>",
@@ -124,9 +124,7 @@ Same as above, but with user status "not in game"
         "cmd": "clear"
     }
 ### Answer ######
-    {
-        "status": "ok"
-    }
+Good: _OK_
 
 ## Getting a list of games ##
 
@@ -136,6 +134,7 @@ Same as above, but with user status "not in game"
         "sid": "<sid>"
     }
 ### Answer ######
+Good:
     {
         "status": "ok",
         "games": [ {"gameName": "<name of the game>" }, ...  ]
@@ -149,6 +148,7 @@ Same as above, but with user status "not in game"
         "sid": "<sid>"
     }
 ### Answer ######
+Good:    
     {
         "status": "ok",
         "players": [ { "username": "<username>" }, ...  ]
@@ -163,6 +163,7 @@ Same as above, but with user status "not in game"
         "gameName": "<name of the game>"
     }
 ### Answer ######
+Good:    
     {
         "status": "ok",
         "players": [ { "username": "<username>" }, ...  ]
@@ -177,9 +178,7 @@ Same as above, but with user status "not in game"
         "status": "<status>"
     }
 ### Answer ######
-    {
-        "status": "ok"
-    }
+Good: _OK_
 
 ## Creation of a game ##
 
@@ -191,9 +190,7 @@ Same as above, but with user status "not in game"
         "maxPlayers": <number>
     }
 ### Answer ######
-    {
-        "status": "ok"
-    }
+Good: _OK_
 
 ## Join a game ##
 
@@ -204,9 +201,7 @@ Same as above, but with user status "not in game"
         "gameName": "<name of the game>"
     }
 ### Answer ######
-    {
-        "status": "ok"
-    }
+Good: _OK_
 
 ## Leaving a game ##
 
@@ -217,9 +212,7 @@ Same as above, but with user status "not in game"
         "gameName": "<name of the game>"
     }
 ### Answer ######
-    {
-        "status": "ok"
-    }
+Good: _OK_
 
 Tests format specification
 ==========================
@@ -267,6 +260,7 @@ like this
     }
 Before the game starts players must put their Units on a deployment spots. Each Unit have a cost, and sum of 
 all Units costs must be equal of lower then totalCost declared for map. Each Unit have a list of characteristics:
+
  * HP - health
  * MP - count of squares, unit can cross in one turn
  * Defense
@@ -279,13 +273,24 @@ Extensions to protocol
 ----------------------
 
 ### Upload a map ###
+#### Request ####
     {
-        "cmd": "uploadMap"
-        "map": "[map strings]"
+        "cmd": "uploadMap",
+        "sid": "<sid>",
+        "map": "[<map strings>]",
         "name": "<name>"
     }
-### Response ###
+#### Answer ####
+Good: _OK_
+### Delete a map ###
+#### Request ####
     {
-        "status": "ok"
+        "cmd": "deleteMap",
+        "sid": "<sid>",
+        "name": "<name>"
     }
+#### Answer ####
+Good: _OK_
+
+
 
