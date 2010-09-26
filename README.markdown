@@ -342,3 +342,18 @@ Good: _OK_
     }
 #### Answer ####
 Good: _OK_
+
+### Upload Army ###
+#### Request ####
+    {
+        "cmd": "uploadArmy",
+        "sid": "<sid>",
+        "name": "<name of army>",
+        "units": [
+            {
+                "name": "<unit name>",
+                "count": <number>
+            },...]
+    }
+#### Answer ####
+Good: _OK_
