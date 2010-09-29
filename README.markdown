@@ -159,7 +159,8 @@ Good:
                 "factionName": "<name of faction>",
                 "gameStatus": "<status of game>",
                 "playersCount": <number>,
-                "connectedPlayersCount": <number>
+                "connectedPlayersCount": <number>,
+                "totalCost": <number>
             }, ...  ]
     }
 
@@ -308,10 +309,12 @@ Extensions to protocol
         "cmd": "uploadMap",
         "sid": "<sid>",
         "name": "<name>",
-        "map": "[<map strings>,...]",
+        "terrain": "[<map strings>,...]",
     }
 #### Answer ####
 Good: _OK_
+
+Error: _Bad Map_, _Bad Sid_, _Already Exists_
 
 ### Delete a map ###
 #### Request ####
@@ -360,6 +363,7 @@ Good: _OK_
         "cmd": "uploadArmy",
         "sid": "<sid>",
         "name": "<name of army>",
+        "factionName": "<name of faction>",
         "units": [
             {
                 "name": "<unit name>",
