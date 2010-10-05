@@ -450,3 +450,57 @@ Good:
             },...
         ]
     }
+### Get Game State ###
+#### Request ####
+    {
+        "cmd": "getGameState",
+        "sid": "<sid>",
+        "name": "<name of game>"
+    }
+#### Answer ####
+Good:
+    {
+        "status": "ok",
+        "players": [ 
+            { 
+            	"username": "<username>" 
+                "units": [
+                    { 
+                    	"name": "<name of unit>",
+                        "hp": <number>,
+                        "mp": <number>,
+                		"defense": <number>,
+                		"attack": <number>,
+                		"range": <number>,
+                		"damage": <number>,
+                		"cost": <number>
+                    }, ... 
+                ]
+                "isReady": <boolean>
+            }, ...  
+        ]
+        "turn": <number>
+    }
+### Move ###
+#### Request ####
+    {
+        "cmd": "move",
+        "sid": "<sid>",
+        "turn": <number>
+        "units": [
+            { 
+                "name": "<name of unit>",
+                "posX": <number>,
+                "posY": <number>,
+                "destX": <number>,
+                "destY": <number>,
+                "attackX": <number>,
+                "attackY": <number>
+            }, ... 
+        ]               
+    }
+#### Answer ####
+Good:
+    {
+        "status": "ok"
+    }    
