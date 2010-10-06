@@ -504,7 +504,4 @@ Good:
         ]               
     }
 #### Answer ####
-Good:
-    {
-        "status": "ok"
-    }    
+Good: _OK_
