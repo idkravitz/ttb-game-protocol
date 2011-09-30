@@ -411,6 +411,26 @@ Good:
         "map": ["<map strings>",...],
     }
 
+### Get Map List ###
+#### Request ####
+    {
+        "cmd": "getMapList",
+        "sid": "<sid>"
+    }
+#### Answer ####
+Good:
+    {
+        "status": "ok",
+        "maps": [
+            {
+                "name": "<name of map>",
+                "players": "<number>",
+                "width": "<number>",
+                "height": "<number>"
+            }
+        ]
+    }
+
 ### Get Faction ###
 #### Request ####
     {
